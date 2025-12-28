@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 N = 1000
 t = np.linspace(0, 10, N)
 
-trend = 0.5 * t**2 + 2 * t + 1
+trend = 0.7 * t**2 + 2.5 * t + 8
 
 # sezon: doua frecvente
 sezon = 5 * np.sin(2 * np.pi * t) + 3 * np.sin(2 * np.pi * 2 * t)

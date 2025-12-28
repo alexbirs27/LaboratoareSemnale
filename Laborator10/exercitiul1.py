@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 1. Generare serie de timp (din Lab8)
 N = 1000
 t = np.linspace(0, 10, N)
 
@@ -12,7 +11,6 @@ zgomot = np.random.normal(0, 2.5, N)
 y = trend + sezon + zgomot
 
 
-plt.figure(figsize=(10, 6))
 plt.plot(t, y)
 plt.title('Seria de timp generata')
 plt.savefig('exercitiul1.pdf')

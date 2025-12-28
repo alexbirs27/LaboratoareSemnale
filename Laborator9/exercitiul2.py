@@ -112,7 +112,7 @@ for i in range(1, N):
 
     level[i] = a * (serie[i] - prev_sezon) + (1 - a) * (level[i-1] + trend_comp[i-1])
     trend_comp[i] = b * (level[i] - level[i-1]) + (1 - b) * trend_comp[i-1]
-    sezon_comp[i] = g * (serie[i] - level[i]) + (1 - g) * prev_sezon
+    sezon_comp[i] = g * (serie[i] - level[i] - trend_comp[i-1]) + (1 - g) * prev_sezon
 
 pred_triple = level + trend_comp + sezon_comp
 
